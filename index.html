@@ -15,6 +15,14 @@
             --light: #f8fafc;
         }
         
+        body {
+            background-image: url('BG.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.6; /* This will apply to the entire body */
+        }
+
         .sidebar {
             transition: all 0.3s ease;
         }
@@ -41,17 +49,9 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
-        .school-bg::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background-image: url('BG.jpg') no-repeat center center / cover;
-            opacity: 0.6;
-            z-index: -1;
-        }
     </style>
 </head>
-<body class="bg-gray-100 font-sans relative school-bg">
+<body class="bg-gray-100 font-sans relative">
     <div class="flex h-screen overflow-hidden">
         <!-- Sidebar -->
         <div class="sidebar fixed md:relative bg-white text-gray-800 w-64 h-full border-r border-gray-200 z-10">
@@ -139,7 +139,7 @@
                         </button>
                     </div>
                     <div class="relative">
-                        <img src="https://placehold.co/40x40" alt="User profile picture showing a young professional educator with glasses and smiling" class="rounded-full cursor-pointer">
+                        <img src="https://placehold.co/40x40" alt="User  profile picture showing a young professional educator with glasses and smiling" class="rounded-full cursor-pointer">
                     </div>
                 </div>
             </header>
@@ -344,7 +344,7 @@
                                 <thead class="bg-gray-50">
                                     <tr>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Event</th>
-                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User </th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Details</th>
                                     </tr>
@@ -362,93 +362,4 @@
                                     </tr>
                                     <tr class="hover:bg-gray-50">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Fee Payment</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Robert Chen</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25 minutes ago</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                                Completed
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="hover:bg-gray-50">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Attendance Marked</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Class 10-A</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1 hour ago</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                                Completed
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="hover:bg-gray-50">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Exam Result</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mid Term - Science</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2 hours ago</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                                                Processing
-                                            </span>
-                                        </td>
-                                    </tr>
-                                    <tr class="hover:bg-gray-50">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Library Book</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Emily Wilson</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 hours ago</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
-                                                Pending
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Actions -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:bg-gray-50 transition-colors">
-                        <div class="p-3 bg-blue-100 rounded-full text-blue-600 mb-2">
-                            <i class="fas fa-user-plus text-xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900">Add Student</p>
-                    </button>
-                    <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:bg-gray-50 transition-colors">
-                        <div class="p-3 bg-purple-100 rounded-full text-purple-600 mb-2">
-                            <i class="fas fa-chalkboard-teacher text-xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900">Add Teacher</p>
-                    </button>
-                    <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:bg-gray-50 transition-colors">
-                        <div class="p-3 bg-green-100 rounded-full text-green-600 mb-2">
-                            <i class="fas fa-book text-xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900">Add Course</p>
-                    </button>
-                    <button class="bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:bg-gray-50 transition-colors">
-                        <div class="p-3 bg-orange-100 rounded-full text-orange-600 mb-2">
-                            <i class="fas fa-clipboard-list text-xl"></i>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900">Take Attendance</p>
-                    </button>
-                </div>
-            </main>
-        </div>
-    </div>
-
-    <script>
-        // Toggle sidebar on mobile
-        document.getElementById('sidebarToggle').addEventListener('click', function() {
-            document.querySelector('.sidebar').classList.toggle('open');
-        });
-
-        // Simulate data loading
-        setTimeout(() => {
-            document.querySelectorAll('.animate-pulse').forEach(el => {
-                el.classList.remove('animate-pulse');
-            });
-        }, 1500);
-    </script>
-</body>
-</html>
+                                        <td class="px-6 py-4 whitespace-nowrap text

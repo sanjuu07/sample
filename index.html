@@ -41,9 +41,16 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
+        .school-bg::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url('BG.jpg') no-repeat center center / cover;
+            opacity: 0.6;
+            z-index: -1;
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans relative school-bg">
     <div class="flex h-screen overflow-hidden">
         <!-- Sidebar -->
         <div class="sidebar fixed md:relative bg-white text-gray-800 w-64 h-full border-r border-gray-200 z-10">
